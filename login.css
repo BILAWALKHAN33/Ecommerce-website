@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Occupy full viewport height */
+  }
+  
+  .login-form {
+    width: 350px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; /* Form background color */
+    /* Animation on form appearance */
+    animation: slide-in 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hover animations on form elements */
+  .login-form label,
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form button[type="submit"] {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .login-form label:hover,
+  .login-form input[type="text"]:hover,
+  .login-form input[type="password"]:hover,
+  .login-form button[type="submit"]:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  /* Animation for the button on click */
+  .login-form button[type="submit"]:active {
+    transform: scale(0.95); /* Slight shrink on click */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  button[type="submit"] {
+    background-color: #3498db; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
